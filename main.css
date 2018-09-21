@@ -37,3 +37,20 @@ body{
  font-size:1.5rem;
  font-style: italic;
 }
+
+@media(max-width:320px){
+    
+    .wrapper{
+        padding: 2rem;
+        padding-top:5rem;
+        width:80%;
+    }
+    
+    .quote{
+        font-size:.9rem;
+    }
+    
+    .author{
+        font-size:.8rem;
+    }
+}
