@@ -11,7 +11,7 @@ body{
     height:100vh;
     background: url('asset/freedom.jpg') no-repeat center;
     background-size: cover;
-    color:#332;
+    color:#333;
 }
 
 .wrapper{
@@ -32,6 +32,52 @@ body{
  font-family: 'Crimson Text', serif;
  font-size:.75rem;
  font-style: italic;
+}
+
+nav{
+    position:fixed;
+    height:1rem;
+    padding-bottom:2rem;
+    bottom:0;
+    left:0;
+    width:100%;
+    background-color:rgba(0, 0, 0, 0.2);
+}
+
+nav ul{
+    list-style-type: none;
+    margin-bottom: 1rem;
+}
+
+nav li{
+    float:right;
+    font-size: 1rem;
+    padding: 0 .5rem;
+    font-size: .75rem;
+    color:#fcfcfc;
+    font-family: Arial,Helvetica,  sans-serif;
+    font-weight: 600;
+}
+
+nav a{
+    text-decoration: none;
+    color:#fcfcfc;
+}
+
+nav a:hover{
+    color:#018dfd;
+    transition: color .15s ease-in-out;
+}
+
+@media(min-width:1000px){
+    
+    nav{
+        padding-bottom: 2.5rem;
+    }
+    
+    nav li{
+        font-size: .9rem;
+    }
 }
 
 @media(min-width:320px){
