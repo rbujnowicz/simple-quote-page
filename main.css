@@ -1,13 +1,9 @@
-/**{
-    display:border-box;
-}*/
-
 html,
 body {
   margin: 0;
   padding: 0;
   font-size: 100%;
-  line-height: 1.5;
+  line-height: 1.3rem;
 }
 
 body{
@@ -19,8 +15,8 @@ body{
 }
 
 .wrapper{
-   width:90%;
-   padding:4rem;
+   width:60%;
+   padding:2rem;
    margin:0 auto;
    text-align: center;
    vertical-align: middle;
@@ -29,25 +25,25 @@ body{
 .quote{
     text-transform: uppercase;
     font-family:'Julius Sans One', sans-serif;
-    font-size:2.5rem;
+    font-size:.8rem;
 }
 
 .author{
  font-family: 'Crimson Text', serif;
- font-size:1.5rem;
+ font-size:.75rem;
  font-style: italic;
 }
 
-@media(max-width:320px){
+@media(min-width:320px){
     
     .wrapper{
-        padding: 2rem;
-        padding-top:5rem;
-        width:80%;
+        width:70%;
+        padding:2rem;
+        padding-top:3.8rem;
     }
     
     .quote{
-        font-size:.9rem;
+        font-size: .9rem;
     }
     
     .author{
@@ -55,37 +51,75 @@ body{
     }
 }
 
-@media(max-width:767px) and (min-width:321px){
+@media(min-width:420px){
+    
+    body{
+        line-height: 1.45rem;
+    }
     
     .wrapper{
-        padding:2rem;
-        padding-top:5rem;
-        width:83%;
+        width:80%;
+        padding-top:4rem;
     }
     
     .quote{
-        font-size:1rem;
+        font-size: 1rem;
     }
     
     .author{
-        font-size: .8rem;
+        font-size:.9rem;
     }
 }
 
-@media(min-width:768px) and (max-width:1320px){
+@media(min-width:600px){
+    
+    body{
+        line-height: 1.5rem;
+    }
     
     .wrapper{
         width:90%;
-        margin: 0 auto;
-        padding:2rem;
-        padding-top:6.5rem;
+        padding-top: 4.9rem;
     }
     
     .quote{
-        font-size:1.4rem;
+        font-size: 1.15rem;
+    }
+    
+    .author{
+        font-size: .95rem;
+    }
+}
+
+@media(min-width:1020px){
+    
+    body{
+        line-height: 2rem;
+    }
+    .quote{
+        font-size:1.5rem;
     }
     
     .author{
         font-size: 1.1rem;
+    }
+}
+
+@media(min-width:1300px){
+    
+    body{
+        line-height: 2.5rem;
+    }
+    
+    .quote{
+        font-size: 2rem;
+    }
+    
+    .author{
+        font-size: 1.5rem;
+    }
+    
+    .wrapper{
+        padding-top: 5.5rem;
     }
 }
